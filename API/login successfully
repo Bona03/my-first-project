@@ -1,0 +1,61 @@
+id: lOyOPzOQtEuSHCYF1ds_Qw
+projectId: SWcTT3lSF0K4Mwro4Q2YHA
+projectName: My first Project
+created: 2022-04-19T13:30:07.2222957Z
+protocol: 1
+tests:
+- id: oC8O6P9P4UKHNFYHKntM5g
+  name: login successfully
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-04-19T13:30:07.0000000
+  modificationDate: 2022-04-19T13:30:07.0000000
+  settings:
+    automationAssistant: true
+    appId: QFbESkxoD0WumvM1xRmzcg
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: QFbESkxoD0WumvM1xRmzcg
+    name: login
+    url: https://api.jubelio.com/
+    platform: Web
+  steps:
+  - id: oOGanoJO2UuV0UN8AtqPNA
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '{{ApplicationURL}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://api.jubelio.com/
+    type: Input
+auxTests: []
+elements: []
+projectParameters: []
+addons: []
