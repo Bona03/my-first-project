@@ -1,7 +1,7 @@
-id: YabijIwJGEudaz5h6N0Clw
+id: LB7_PhM0bEK2R2aGyr4GyQ
 projectId: SWcTT3lSF0K4Mwro4Q2YHA
 projectName: My first Project
-created: 2022-04-19T16:36:48.1216656Z
+created: 2022-04-19T16:51:35.9184015Z
 protocol: 1
 tests:
 - id: yTrcdqOom0-KC3tk3VmgGg
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-04-19T09:35:29.0000000
-  modificationDate: 2022-04-19T16:36:43.0000000
+  modificationDate: 2022-04-19T16:50:56.0000000
   settings:
     automationAssistant: true
     appId: w6nMtJW5vEGHzIYmdejcBg
@@ -141,7 +141,7 @@ tests:
       source: System
     parameterMaps:
     - name: keys
-      value: '{{email}}'
+      value: '[[email_valid]]'
       direction: Input
     conditions: []
     validations: []
@@ -165,7 +165,7 @@ tests:
       source: System
     parameterMaps:
     - name: keys
-      value: '{{password}}'
+      value: '[[password_valid]]'
       direction: Input
     conditions: []
     validations: []
@@ -266,14 +266,6 @@ tests:
     description: ''
     value: ''
     type: Input
-  - name: email
-    description: ''
-    value: customerxiaomi21@gmail.com
-    type: Input
-  - name: password
-    description: ''
-    value: Jubelio@1234
-    type: Input
 auxTests: []
 elements:
 - id: uZJFyhymfUeLDp2TACGMrg
@@ -373,7 +365,15 @@ elements:
   - name: XPATH
     value: /html/body/div[1]/div/div[3]/div[2]/div[1]/nav/div/div/li/a/span[2]
     priority: 1
-projectParameters: []
+projectParameters:
+- id: 8ngie3Bl2Uu5heBHuaBQ0A
+  name: email_valid
+  description: ''
+  value: customerxiaomi21@gmail.com
+- id: oYcm2cJU1kOUwt-XDxTAhA
+  name: password_valid
+  description: ''
+  value: Jubelio@1234
 addons:
 - id: Ujn6E4VbkEa6QU2XChYMyQ
   source: Store
