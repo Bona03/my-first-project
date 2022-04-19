@@ -1,7 +1,7 @@
-id: HbJmC7A6mkClq8_aA-mqRQ
+id: IKFySxReDESb4RbvKhu2HQ
 projectId: SWcTT3lSF0K4Mwro4Q2YHA
 projectName: My first Project
-created: 2022-04-19T12:19:51.5666577Z
+created: 2022-04-19T12:31:53.5010477Z
 protocol: 1
 tests:
 - id: yTrcdqOom0-KC3tk3VmgGg
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-04-19T09:35:29.0000000
-  modificationDate: 2022-04-19T12:19:37.0000000
+  modificationDate: 2022-04-19T12:29:22.0000000
   settings:
     automationAssistant: true
     appId: w6nMtJW5vEGHzIYmdejcBg
@@ -122,13 +122,38 @@ tests:
     conditions: []
     validations: []
     contexts: []
-  - id: JVTpQwcQrECYXSvJzUyByA
+  - id: WLnjun6CF0uQwEctoI5RzA
     comments: ''
     enabled: true
     invertResult: false
     order: 3
     repeat: 1
-    type: Addon
+    type: Action
+    elementId: uZJFyhymfUeLDp2TACGMrg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Success
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: customerxiaomi21@gmail.com
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: EOvb-JShPkCav6C0XyqGAw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: uXUlTSRNyU2EKKV7HGuAEQ
     settings:
       sleepTime: -1
       timeout: -1
@@ -136,68 +161,33 @@ tests:
       failureBehaviorType: Inherit
       takeScreenshotConditionType: Inherit
     action:
-      id: 3pyX37O89EenPV590WXfPQ
-      source: Store
-      addonId: Ujn6E4VbkEa6QU2XChYMyQ
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
     parameterMaps:
-    - name: uri
-      value: https://api.jubelio.com/login
+    - name: keys
+      value: Jubelio@1234
       direction: Input
-    - name: query
-      value: ''
-      direction: Input
-    - name: headers
-      value: ''
-      direction: Input
-    - name: body
-      value: >-
-        {
-         "email":{{email}}, 
-         "password:{{password}}
-        }
-      direction: Input
-    - name: format
-      value: ''
-      direction: Input
-    - name: expectedStatus
-      value: 200
-      direction: Input
-    - name: jsonPath
-      value: ''
-      direction: Input
-    - name: response
-      value: ''
-      direction: Output
-    - name: status
-      value: ''
-      direction: Output
-    - name: ignoreUntrustedCertificate
-      value: ''
-      direction: Input
-    - name: responseHeaders
-      value: ''
-      direction: Output
-    - name: jsonResponse
-      value: ''
-      direction: Output
-    - name: schemaPath
-      value: ''
-      direction: Input
-    - name: createFile
-      value: ''
-      direction: Input
-    - name: schemaValidationOutputFilePath
-      value: ''
-      direction: Input
-    - name: schemaValidationOutput
-      value: ''
-      direction: Output
-    - name: headerDelimiter
-      value: ''
-      direction: Input
-    - name: filePath
-      value: ''
-      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: sA8oeVRqiEeKOBHpoATXmQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: QhvlRGE4jUyc6y1QDjjZyQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
     conditions: []
     validations: []
     contexts: []
@@ -218,12 +208,59 @@ tests:
     description: ''
     value: Jubelio@1234
     type: Input
-  - name: token
-    description: ''
-    value: ''
-    type: Input
 auxTests: []
-elements: []
+elements:
+- id: uZJFyhymfUeLDp2TACGMrg
+  name: email
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: "[name='email']"
+    priority: 0
+  - name: XPATH
+    value: //div[1]/div/input
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div/div[1]/div/div[2]/div/form/div[1]/div/input
+    priority: 2
+- id: uXUlTSRNyU2EKKV7HGuAEQ
+  name: password
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: "[name='password']"
+    priority: 0
+  - name: XPATH
+    value: //div[2]/div/input
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div/div[1]/div/div[2]/div/form/div[2]/div/input
+    priority: 2
+- id: QhvlRGE4jUyc6y1QDjjZyQ
+  name: Masuk
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Masuk']
+    priority: 0
+  - name: XPATH
+    value: //button
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div/div[1]/div/div[2]/div/form/button
+    priority: 2
 projectParameters: []
 addons:
 - id: Ujn6E4VbkEa6QU2XChYMyQ
@@ -234,10 +271,6 @@ addons:
     name: HTTP GET Request
     description: GET {{uri}}?{{query}}
     className: io.testproject.addon.restfulapiclient.actions.GetAction
-  - id: 3pyX37O89EenPV590WXfPQ
-    name: HTTP POST Request
-    description: POST {{uri}}?{{query}}
-    className: io.testproject.addon.restfulapiclient.actions.PostAction
   minSdkLevel: 2
   minSdkVersion: 0.65.0
   sdkGeneration: 1
