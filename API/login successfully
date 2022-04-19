@@ -1,7 +1,7 @@
-id: MzFqwUsOCk-Hr4p-NNdRpw
+id: Ei7j8jrtTk64iIqMQKKH8g
 projectId: SWcTT3lSF0K4Mwro4Q2YHA
 projectName: My first Project
-created: 2022-04-19T13:31:59.1191617Z
+created: 2022-04-19T13:39:55.5210170Z
 protocol: 1
 tests:
 - id: 9wDVm0-EAESw4zsegQ5muA
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-04-19T13:31:59.0000000
-  modificationDate: 2022-04-19T13:31:59.0000000
+  modificationDate: 2022-04-19T13:39:48.0000000
   settings:
     automationAssistant: true
     appId: QFbESkxoD0WumvM1xRmzcg
@@ -27,13 +27,13 @@ tests:
     url: https://api.jubelio.com/
     platform: Web
   steps:
-  - id: rEI6hUIwbkaokVa_EQ8TpA
-    comments: Navigates the specified URL (Auto-generated)
+  - id: KnQKZ1wz00ecnI_dzAu_hw
+    comments: ''
     enabled: true
     invertResult: false
     order: 1
     repeat: 1
-    type: Action
+    type: Addon
     settings:
       sleepTime: -1
       timeout: -1
@@ -41,14 +41,70 @@ tests:
       failureBehaviorType: Inherit
       takeScreenshotConditionType: Inherit
     action:
-      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
-      source: System
+      id: 3pyX37O89EenPV590WXfPQ
+      source: Store
+      addonId: Ujn6E4VbkEa6QU2XChYMyQ
     parameterMaps:
-    - name: url
-      value: '{{ApplicationURL}}'
+    - name: uri
+      value: https://api.jubelio.com/login
+      direction: Input
+    - name: query
+      value: ''
+      direction: Input
+    - name: headers
+      value: ''
+      direction: Input
+    - name: body
+      value: '{"email": "customerxiaomi21@gmail.com","password": "Jubelio@1234"}'
+      direction: Input
+    - name: format
+      value: ''
+      direction: Input
+    - name: expectedStatus
+      value: ''
+      direction: Input
+    - name: jsonPath
+      value: ''
+      direction: Input
+    - name: response
+      value: ''
+      direction: Output
+    - name: status
+      value: ''
+      direction: Output
+    - name: ignoreUntrustedCertificate
+      value: ''
+      direction: Input
+    - name: responseHeaders
+      value: ''
+      direction: Output
+    - name: jsonResponse
+      value: ''
+      direction: Output
+    - name: schemaPath
+      value: ''
+      direction: Input
+    - name: createFile
+      value: ''
+      direction: Input
+    - name: schemaValidationOutputFilePath
+      value: ''
+      direction: Input
+    - name: schemaValidationOutput
+      value: ''
+      direction: Output
+    - name: headerDelimiter
+      value: ''
+      direction: Input
+    - name: filePath
+      value: ''
       direction: Input
     conditions: []
-    validations: []
+    validations:
+    - type: Contains
+      invert: false
+      field: response
+      value: customerxiaomi21@gmail.com
     contexts: []
   parameters:
   - name: ApplicationURL
@@ -58,4 +114,17 @@ tests:
 auxTests: []
 elements: []
 projectParameters: []
-addons: []
+addons:
+- id: Ujn6E4VbkEa6QU2XChYMyQ
+  source: Store
+  version: 1.6.10
+  actions:
+  - id: 3pyX37O89EenPV590WXfPQ
+    name: HTTP POST Request
+    description: POST {{uri}}?{{query}}
+    className: io.testproject.addon.restfulapiclient.actions.PostAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 57049348D63450C0C1534B4F42E978E4294D0D97EA54E3B9E46042611553E0B0
