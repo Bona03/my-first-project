@@ -1,7 +1,7 @@
-id: roc64Hue802YFwTTKsWStg
+id: -8oNVyRQfkyMGoZHEEY8qQ
 projectId: SWcTT3lSF0K4Mwro4Q2YHA
 projectName: My first Project
-created: 2022-04-19T16:23:36.2705292Z
+created: 2022-04-19T16:31:01.7888419Z
 protocol: 1
 tests:
 - id: 9wDVm0-EAESw4zsegQ5muA
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-04-19T13:31:59.0000000
-  modificationDate: 2022-04-19T15:42:56.0000000
+  modificationDate: 2022-04-19T16:30:50.0000000
   settings:
     automationAssistant: true
     appId: QFbESkxoD0WumvM1xRmzcg
@@ -107,10 +107,6 @@ tests:
       value: customerxiaomi21@gmail.com
     contexts: []
   parameters:
-  - name: ApplicationURL
-    description: Auto generated application URL parameter
-    value: https://api.jubelio.com/
-    type: Input
   - name: email
     description: ''
     value: customerxiaomi21@gmail.com
