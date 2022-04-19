@@ -1,7 +1,7 @@
-id: jgLNnps0r0O7yIFgzyVwww
+id: pKu3twk4D0-xy7FAsX-oWw
 projectId: SWcTT3lSF0K4Mwro4Q2YHA
 projectName: My first Project
-created: 2022-04-19T16:47:34.7839866Z
+created: 2022-04-19T16:49:24.0979981Z
 protocol: 1
 tests:
 - id: 9sx-SnazjE269IYpPEHtYw
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-04-19T13:01:32.0000000
-  modificationDate: 2022-04-19T16:41:15.0000000
+  modificationDate: 2022-04-19T16:49:00.0000000
   settings:
     automationAssistant: true
     appId: w6nMtJW5vEGHzIYmdejcBg
@@ -69,7 +69,7 @@ tests:
       source: System
     parameterMaps:
     - name: keys
-      value: customerxiami21
+      value: '[[invalidFormat_email]]'
       direction: Input
     conditions: []
     validations: []
@@ -93,7 +93,7 @@ tests:
       source: System
     parameterMaps:
     - name: keys
-      value: Jubelio@1234
+      value: '[[password_valid]]'
       direction: Input
     conditions: []
     validations: []
@@ -180,10 +180,6 @@ tests:
     description: Auto generated application URL parameter
     value: https://app.jubelio.com/login
     type: Input
-  - name: email
-    description: ''
-    value: customerxiaomi21
-    type: Input
 auxTests: []
 elements:
 - id: uZJFyhymfUeLDp2TACGMrg
@@ -266,7 +262,15 @@ elements:
   - name: XPATH
     value: /html/body/div[1]/div/div/div[1]/div/div[2]/div/form/div[1]/div/span
     priority: 2
-projectParameters: []
+projectParameters:
+- id: ym-AM_VJ_UGrsd813RVV_Q
+  name: invalidFormat_email
+  description: ''
+  value: customerxiaomi21
+- id: oYcm2cJU1kOUwt-XDxTAhA
+  name: password_valid
+  description: ''
+  value: Jubelio@1234
 addons:
 - id: inW2AJJ04ku45E9-RN2zqA
   source: Store
