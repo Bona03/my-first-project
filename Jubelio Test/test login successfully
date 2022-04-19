@@ -1,7 +1,7 @@
-id: IKFySxReDESb4RbvKhu2HQ
+id: viT0IAtYI06sGvqm1FdgbQ
 projectId: SWcTT3lSF0K4Mwro4Q2YHA
 projectName: My first Project
-created: 2022-04-19T12:31:53.5010477Z
+created: 2022-04-19T12:44:31.2561281Z
 protocol: 1
 tests:
 - id: yTrcdqOom0-KC3tk3VmgGg
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-04-19T09:35:29.0000000
-  modificationDate: 2022-04-19T12:29:22.0000000
+  modificationDate: 2022-04-19T12:42:31.0000000
   settings:
     automationAssistant: true
     appId: w6nMtJW5vEGHzIYmdejcBg
@@ -191,6 +191,72 @@ tests:
     conditions: []
     validations: []
     contexts: []
+  - id: 0l2RCjuPsUW7smpaPKzBuA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: eSVZ8Sg4IEqVSKjNQ4p0AA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: customerxiaomi21@gmail.com
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ZohydVdUEkazztjT7-EW1Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: 5E7aiCISQkmM1zDzkddCfQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 6uiMCEkzd0uvPdm5S_CUFw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: W-SNeWwYcUu0DpzT28_75Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
   parameters:
   - name: ApplicationURL
     description: Auto generated application URL parameter
@@ -261,6 +327,52 @@ elements:
   - name: XPATH
     value: /html/body/div[1]/div/div/div[1]/div/div[2]/div/form/button
     priority: 2
+- id: eSVZ8Sg4IEqVSKjNQ4p0AA
+  name: customerxiaomi21@gmail.com
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //span[. = 'customerxiaomi21@gmail.com']
+    priority: 0
+  - name: XPATH
+    value: //div/li/a/span[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div[3]/div[2]/div[1]/nav/div/div/li/a/span[1]
+    priority: 2
+- id: W-SNeWwYcUu0DpzT28_75Q
+  name: Keluar
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //a[. = ' Keluar']
+    priority: 0
+  - name: XPATH
+    value: //div/li/ul/li[4]/a
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div[3]/div[2]/div[1]/nav/div/div/li/ul/li[4]/a
+    priority: 2
+- id: 5E7aiCISQkmM1zDzkddCfQ
+  name: SPAN
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //div/li//span[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div/div[3]/div[2]/div[1]/nav/div/div/li/a/span[2]
+    priority: 1
 projectParameters: []
 addons:
 - id: Ujn6E4VbkEa6QU2XChYMyQ
